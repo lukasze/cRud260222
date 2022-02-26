@@ -1,17 +1,23 @@
 package com.example.crud260222.controller;
 
-import org.springframework.web.bind.annotation.ResponseBody;
+import com.example.crud260222.service.HobbitService;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;
 
-/*
-    TODO 2 Supermoce:
-     -  ziarno Spring'a (adnotacja @Component)
-     - 'dom' dla endpointów (użycie Spring MVC - adnotacja @Controller)
- */
 @RestController
-/*
-Kliknij w powyższą adnotację, tożsama z :
-@RestController
-@ResponseBody*/
+@AllArgsConstructor
 public class HobbitController {
+
+    private final HobbitService hobbitService;
+
 }
+
+/*
+    TODO @Autowired to 'klej' aplikacji
+
+    - wstrzykujemy przez konstruktor
+    - od wersji Spring 4.3, tylko jeden konstruktor - nie musimy używać @Autowired
+    - używając lomboka, nie musimy nawet dodawać konstruktora
+    - dlaczego wstrzykujemy przez konstruktor? (dobra praktyka, ale dlaczego? :) )
+
+ */

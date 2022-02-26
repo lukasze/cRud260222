@@ -14,9 +14,3 @@ public class CRud260222Application {
     }
 
 }
-
-/*
-    TODO struktura aplikacji - klasa główna zawsze na szczycie hierarchii!
-
-    Warstwy aplikacji: model, controller, service, reposiotry
- */
