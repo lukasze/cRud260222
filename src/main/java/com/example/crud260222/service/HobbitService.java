@@ -13,11 +13,6 @@ public class HobbitService {
     private final HobbitRepository hobbitRepository;
 
     public List<Hobbit> findAll() {
-        return List.of(
-                    new Hobbit(1L, "Frodo", "Baggins"),
-                    new Hobbit(2L, "Bilbo", "Baggins"),
-                    new Hobbit(3L, "Penelope", "Tuk")
-                );
+        return hobbitRepository.findAll();
     }
-
 }
